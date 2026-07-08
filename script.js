@@ -7,4 +7,4 @@ for (i = 0; i <= 2; i++) {
   sum = sum + productPrice;
 }
 
-alert(sum);
+alert("Total Price with Discount : " + sum);
