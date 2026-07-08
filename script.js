@@ -1,11 +1,10 @@
-let total = 0;
+let cart = [1200, 500, 800];
+let sum = 0;
 
-for (let i = 1; i <= 3; i++) {
-  let number = Number(prompt("Enter Your Number", i));
-  total += number;
+for (i = 0; i <= 2; i++) {
+  // let productPrice = cart[i];
+  let productPrice = cart[i] - (cart[i] * 3) / 100;
+  sum = sum + productPrice;
 }
 
-threePercentage = (total * 3) / 100;
-total = total - threePercentage;
-
-alert(total);
+alert(sum);
